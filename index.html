@@ -6,11 +6,7 @@
   
   <!-- js 연결 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script> 
-    $(function(){ includeLayout(); }); 
-
-    function includeLayout(){ var includeArea = $('[data-include]'); var self, url; $.each(includeArea, function() { self = $(this); url = self.data("include"); self.load(url, function() { self.removeAttr("data-include"); }); }); } 
-  </script>
+  <script src="js/main_script.js"></script>
 </head>
 <body>
   <footer role="footer" data-include="footer.html"></footer>
