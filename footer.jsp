@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>세화미술관</title>
+  
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main_style.css">
+  
+  <!-- js 연결 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <footer>
+    <div class="container">
+      <nav class="f_right">
+        <ul class="fnb">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">사이트 이용약관</a></li>
+          <li><a href="#">이메일 무단수집거부</a></li>
+        </ul>
+        <select name="family-site" id="family-site">
+          <option>FAMILY SITE</option>
+          <option value="">섬유&sdot;섬유화학</option>
+          <option value="">금융</option>
+          <option value="">미디어</option>
+          <option value="">인프라 레저</option>
+          <option value="">육영&sdot;Art</option></select>
+      </nav>
+      <div class="f_left">
+        <p>화요일~일요일<span>10:00 ~ 18:00<br></span></p>
+        <p>목요일 야간개관<span>10:00 ~ 20:30<br></span></p>
+        <small>*매주 월요일은 휴관합니다.</small>
+        <address>
+          서울특별시 종로구 새문안로 68 (신문로 1가) 3층<br>
+          (02) 2002.7787<span>sma@sehwamuseum.org<br></span>
+          &copy; 이 사이트는 개인 포트폴리오로 해당 기업과는 관련 없음을 알려드립니다.
+        </address>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
