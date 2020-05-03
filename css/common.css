@@ -2,7 +2,7 @@
 
 /* 공통 */
 .container{
-  position: relative;
+  position: relative; left: 80px;
   width: 1280px;
   margin: 0 auto;
 }
@@ -16,7 +16,7 @@
 
 /* 공통 - media query */
 @media screen and (max-width:1279px){
-  .container{width: 95%;}
+  .container{left: initial; width: 95%;}
 }
 
 
