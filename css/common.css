@@ -21,7 +21,7 @@
 
 
 /* 공통 - font */
-body{overflow: hidden; color: #707070; font-family: 'Noto Sans KR', sans-serif;}
+body{color: #707070; font-family: 'Noto Sans KR', sans-serif;}
 p{font-size: 1.4em;}
 .sub li a{font-size: 1.1em; line-height: 1.8;}
 footer p,small,address,footer a,select{
@@ -162,13 +162,13 @@ header h1 a{
 
 /* header - media query */
 @media screen and (max-width:1279px){
-  header h1{margin-top: 10px; padding-left: 0;}
+  header h1{margin-top: 10px;}
 }
 /* finish header - media query */
 
 
 /* #main */
-#main{position: relative; left: 80px;}
+#main{}
 #main article{
   margin-bottom: 50px;
   outline: 1px solid blue;
@@ -197,7 +197,7 @@ header h1 a{
 
 /* #main - media query */
 @media screen and (max-width:1279px){
-  #main{left: inherit;}
+  #main{}
 }
 /* finish #main - media query */
 
