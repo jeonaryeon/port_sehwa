@@ -30,6 +30,20 @@ footer p,small,address,footer a,select{
 }
 
 
+/* header */
+header{}
+header h1{
+  width: 240px; 
+  margin: 35px auto 50px;
+}
+header h1 a{
+  display: block; 
+  height: 46px;
+  text-indent: -9999px;
+  background-image: url(../images/logo.png); background-repeat: no-repeat;
+}
+
+
 /* #menu */
 #menu{
   position: fixed; left: 0; top: 0; z-index: 1000;
@@ -146,9 +160,37 @@ footer p,small,address,footer a,select{
 /* finish #menu - media query */
 
 
+/* #main */
+#main{}
+#main article{
+  margin-bottom: 50px;
+  outline: 1px solid blue;
+}
+
+#banner{
+  height: 500px;
+}
+
+#notice{
+  width: 100%; height: 80px;
+}
+
+#content{}
+#content .cont{outline: 1px solid green;}
+
+#content .content1{
+  height: 447px;
+  margin-bottom: 50px;
+}
+
+#content .content2{
+  height: 325px;
+}
+
+
 /* footer */
 footer{
-  padding: 40px 0;
+  padding: 30px 0;
   background-color: #2E2E2E;
 }
 
