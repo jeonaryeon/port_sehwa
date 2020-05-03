@@ -30,19 +30,6 @@ footer p,small,address,footer a,select{
 }
 
 
-/* header */
-header{}
-header h1{
-  width: 240px; 
-  margin: 35px auto 50px;
-}
-header h1 a{
-  display: block; 
-  height: 46px;
-  text-indent: -9999px;
-  background-image: url(../images/logo.png); background-repeat: no-repeat;
-}
-
 
 /* #menu */
 #menu{
@@ -128,7 +115,7 @@ header h1 a{
 @media screen and (max-width:1279px){
   #menu{
     position: relative;
-    left: inherit; top: 66px;
+    left: inherit; top: 48px; 
     width: 1030px; height: 24px;
     margin: 0 auto;
     background: none;
@@ -151,13 +138,27 @@ header h1 a{
 } 
 
 @media screen and (max-width:1039px){
-  #menu{top: 48px; width: 100%;}
+  #menu{width: 100%;}
 }
 
 @media screen and (max-width:768px){
   #menu.show-gnb{width: 65%;}
 }
 /* finish #menu - media query */
+
+
+/* header */
+header{}
+header h1{
+  width: 240px; 
+  margin: 10px auto 50px;
+}
+header h1 a{
+  display: block; 
+  height: 46px;
+  text-indent: -9999px;
+  background-image: url(../images/logo.png); background-repeat: no-repeat;
+}
 
 
 /* #main */
