@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <title>세화미술관</title>
   
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  
   <!-- js 연결 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/main_script.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    $(function(){ includeLayout(); }); 
+
+    function includeLayout(){ var includeArea = $('[data-include]'); var self, url; $.each(includeArea, function() { self = $(this); url = self.data("include"); self.load(url, function() { self.removeAttr("data-include"); }); }); } 
+  </script>
 </head>
 <body>
+  <nav role="nav" data-include="nav.html"></nav>
   <footer role="footer" data-include="footer.html"></footer>
 </body>
 </html>
