@@ -49,12 +49,12 @@ footer p,small,address,footer a,select{
 .ham_menu{
   position: relative;
   margin: 30px auto;
-  width: 24px; height: 24px;
+  width: 30px; height: 24px;
   cursor: pointer;
 }
 .ham_menu span{
   position: absolute; left: 0;
-  width: 24px; height: 2px;
+  height: 2px;
   background-color: #fff;
   transition:all 0.4s;
 }
