@@ -21,7 +21,7 @@
 
 
 /* 공통 - font */
-body{color: #707070; font-family: 'Noto Sans KR', sans-serif;}
+body{overflow: hidden; color: #707070; font-family: 'Noto Sans KR', sans-serif;}
 p{font-size: 1.4em;}
 .sub li a{font-size: 1.1em; line-height: 1.8;}
 footer p,small,address,footer a,select{
