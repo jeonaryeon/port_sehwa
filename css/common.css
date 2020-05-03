@@ -151,7 +151,7 @@ footer p,small,address,footer a,select{
 header{}
 header h1{
   width: 240px; 
-  margin: 10px auto 50px;
+  margin: 35px auto 50px;
 }
 header h1 a{
   display: block; 
@@ -159,6 +159,12 @@ header h1 a{
   text-indent: -9999px;
   background-image: url(../images/logo.png); background-repeat: no-repeat;
 }
+
+/* header - media query */
+@media screen and (max-width:1279px){
+  header h1{margin-top: 10px;}
+}
+/* finish header - media query */
 
 
 /* #main */
