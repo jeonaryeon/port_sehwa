@@ -2,9 +2,9 @@
 
 /* 공통 */
 .container{
-  position: relative; left: 80px;
+  position: relative;
   width: 1280px;
-  margin: 0 auto;
+  margin-left: calc((100% - 1280px - 80px)/2);
 }
 .icon{
   display: block;
@@ -16,7 +16,10 @@
 
 /* 공통 - media query */
 @media screen and (max-width:1279px){
-  .container{left: initial; width: 95%;}
+  .container{
+    width: 95%;
+    margin-left: 2.5%;
+  }
 }
 
 
