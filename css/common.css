@@ -4,7 +4,7 @@
 .container{
   position: relative;
   width: 1280px;
-  margin-right: calc((100% - 1280px)/2 - 80px);
+  margin-right: calc((100% - 1280px)/2 + 80px);
 }
 .icon{
   display: block;
@@ -18,7 +18,7 @@
 @media screen and (max-width:1279px){
   .container{
     width: 95%;
-    margin-right: 2.5%;
+    margin-left: 2.5%; margin-right: 0;
   }
 }
 
