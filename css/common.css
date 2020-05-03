@@ -4,7 +4,7 @@
 .container{
   position: relative;
   width: 1280px;
-  margin-right: calc((100% - 1280px)/2 + 80px);
+  margin-right: calc((100% - 1280px)/2 + 160px);
 }
 .icon{
   display: block;
