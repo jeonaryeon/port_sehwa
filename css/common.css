@@ -6,22 +6,37 @@
   width: 1280px;
   margin-left: calc((100% - 1280px)/2 + 40px);
 }
-.icon{
+.cont_container{
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  width: 85%;
+}
+.icon24{
   display: block;
   width: 24px; height: 24px;
   text-indent: -9999px;
-  background-image: url(../images/icon.png);
+  background-image: url(../images/icon24.png);
+  cursor: pointer;
+}
+.icon16{
+  display: inline-block;
+  width: 16px; height: 16px;
+  text-indent: -9999px;
+  background-image: url(../images/icon16.png);
   cursor: pointer;
 }
 
 /* 공통 - font */
 body{color: #707070; font-family: 'Noto Sans KR', sans-serif;}
-p{font-size: 1.4em;}
+p{font-size: 1.25em;}
+h2{font-size: 1.6em;}
+h3, nav p{font-size: 1.4em;}
 .sub li a{font-size: 1.1em; line-height: 1.8;}
-footer p,small,address,footer a,select{
+footer p,address,footer a,select{
   color: #fff;
   font-size: 1em; line-height: 1.9;
 }
+footer small{color: #fff;}
 
 
 
@@ -59,7 +74,7 @@ footer p,small,address,footer a,select{
   display: none;
   margin: 30px 30px 60px;
   color: #333;
-  background-position: -24px 0;
+  background-position: 0 0;
 }
 
 .gnb{display: none; text-indent: 30px;}
@@ -94,9 +109,9 @@ footer p,small,address,footer a,select{
   width: 24px;
 }
 #n_icon a{}
-#n_icon a:nth-child(1){background-position: -48px 0;}
-#n_icon a:nth-child(2){margin: 20px 0; background-position: -72px 0;}
-#n_icon a:nth-child(3){background-position: -96px 0;}
+#n_icon a:nth-child(1){background-position: -24px 0;}
+#n_icon a:nth-child(2){margin: 20px 0; background-position: -48px 0;}
+#n_icon a:nth-child(3){background-position: -72px 0;}
 
 .menu_bg{
   display: none;
@@ -126,30 +141,105 @@ header h1 a{
 
 /* #main */
 #main{}
-#main article{
-  margin-bottom: 50px;
-  outline: 1px solid blue;
-}
+#main article{margin-bottom: 50px;}
 
 #banner{
   height: 500px;
 }
 
 #notice{
+  overflow: hidden;
   width: 100%; height: 80px;
   outline: 1px solid #AEAFAF;
 }
+#notice table{
+  display: block; 
+  overflow: hidden;
+  width: 100%; height: 30px; 
+  margin-top: 25px;
+}
+#notice thead{
+  float: left;
+  width: 10%;
+  line-height: 30px;
+}
+#notice tbody{
+  float: left;
+  position: relative;
+  width: 90%;
+}
+#notice tbody tr{
+  display: none;
+  position: absolute; right: 0; top: 0;
+  width: 100%;
+}
+#notice tbody tr:nth-of-type(1){display: block;}
+#notice tbody .notify{}
+#notice tbody .date{position: absolute; right: 0; top: 0;}
 
 #content{}
-#content .cont{outline: 1px solid green;}
+#content .cont{}
 
-#content .content1{
+#content .exhibition{
+  position: relative;
   height: 447px;
   margin-bottom: 50px;
+  outline: 1px  solid red;
+}
+#content .exhibition img{
+  display: block;
+  float: right;
+  width: 66.66%;
+}
+#content .exhibition figcaption{
+  float: right;
+  left: 0;
+  transform: translate(0,-50%);
+  width: 33.33%;
+}
+#content .exhibition figcaption h2{margin: 10px 0 25px;}
+#content .exhibition figcaption p:nth-of-type(2){margin: 50px 0 65px;}
+#content .exhibition figcaption p strong{margin-right: 15px; line-height: 1.7;}
+#content .exhibition figcaption a{
+  display: block;
+  position: relative;
+  width: 70%; height: 40px;
+  line-height: 40px; text-indent: 20px;
+  outline: 1px solid #707070;
+}
+#content .exhibition figcaption a span{position: absolute; right: 20px; top: 12px;}
+
+#content .program{}
+#content .program section{
+  float: left;
+  width: 24%; height: 350px;
+  margin-right: 2%;
+  outline: 1px solid green;
 }
 
-#content .content2{
-  height: 325px;
+#content .program .related{
+  position: relative;
+  color: #fff;
+  background-color: #707070;
+}
+#content .program .related h3{margin-top: 5px;}
+#content .program .related p{margin: 20px 0 30px;}
+#content .program .related p strong{margin-right: 10px;}
+#content .program .related a{
+  display: block;
+  position: relative;
+  height: 40px;
+  color: #fff; line-height: 40px; text-indent: 20px;
+  outline: 1px solid #fff;
+}
+#content .program .related a span{
+  position: absolute; right: 20px; top: 12px;
+  background-position: -16px 0;
+}
+
+#content .program .tour{
+  width: 48%;
+  margin-right: 0;
 }
 /* finish #main */
 
@@ -218,18 +308,36 @@ select{
   
   /* header */
   header h1{margin-top: 10px;}
+  
+  /* #main */
+  #content .program section{height: 335px;}
 } /* finish max-width:1279px */
 
 
 @media screen and (max-width:1039px){
+  body{font-size: 12px;}
+  
   /* #menu */
   #menu{width: 100%;}
+  
+  /* #main */
+  #content .program section{
+    width: 47.5%; height: 310px;
+    margin-right: 5%;
+  }
+  #content .program .related{margin-right: 0;}
+  #content .program .tour{display: none;}
 } /* finish max-width:1039px */
 
 
 @media screen and (max-width:768px){
+  body{font-size: 11px;}
+  
   /* #menu */
   #menu.show-gnb{width: 65%;}
+  
+  /* #main */
+  #content .program section{height: 290px;}
   
   /* footer */
   .f_left address{margin-top: 15px;}

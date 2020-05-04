@@ -32,8 +32,18 @@ $(function(){
     });
   });
   
-  $(".gnb p").on('click',function(){
+  $('.gnb p').on('click',function(){
     $(this).parent().siblings().find('.sub').hide();
     $(this).siblings('.sub').toggle();
   });
+  
+  /* #notice */
+  function notice(){
+    $('#notice tbody').animate({top:30},function(){
+      $('#notice tbody tr:first').appendTo('#notice tbody');
+      $('#notice tbody').animate({top:0});
+    });
+  }
+  setInterval(notice,3000);
 });
+ 
