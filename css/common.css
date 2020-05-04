@@ -14,15 +14,6 @@
   cursor: pointer;
 }
 
-/* 공통 - media query */
-@media screen and (max-width:1279px){
-  .container{
-    width: 95%;
-    margin-left: 2.5%;
-  }
-}
-
-
 /* 공통 - font */
 body{color: #707070; font-family: 'Noto Sans KR', sans-serif;}
 p{font-size: 1.4em;}
@@ -113,48 +104,15 @@ footer p,small,address,footer a,select{
   width: 100%; height: 100%;
   background-color: rgba(0,0,0,0.7);
 }
+/* finish #menu */
 
-/* #menu - media query */
-@media screen and (max-width:1279px){
-  #menu{
-    position: relative;
-    left: inherit; top: 48px; 
-    width: 1030px; height: 24px;
-    margin: 0 auto;
-    background: none;
-  }
-  #menu.show-gnb{
-    position: fixed; right: 0; top: 0; 
-    height: 100%;
-  }
-  
-  .ham_menu{
-    position: absolute; right: 20px; top: 0;
-    margin: 0;
-  }
-  .ham_menu span{
-    left: inherit; right: 0;
-    background-color: #6F6F6F;
-  }
-  
-  #n_icon{display: none;}
-} 
-
-@media screen and (max-width:1039px){
-  #menu{width: 100%;}
-}
-
-@media screen and (max-width:768px){
-  #menu.show-gnb{width: 65%;}
-}
-/* finish #menu - media query */
 
 
 /* header */
 header{}
 header h1{
   width: 240px; 
-  margin: 35px auto 50px; padding-left: 80px;
+  margin: 35px auto 50px;
 }
 header h1 a{
   display: block; 
@@ -162,12 +120,8 @@ header h1 a{
   text-indent: -9999px;
   background-image: url(../images/logo.png); background-repeat: no-repeat;
 }
+/* finish header */
 
-/* header - media query */
-@media screen and (max-width:1279px){
-  header h1{margin-top: 10px;}
-}
-/* finish header - media query */
 
 
 /* #main */
@@ -197,12 +151,8 @@ header h1 a{
 #content .content2{
   height: 325px;
 }
+/* finish #main */
 
-/* #main - media query */
-@media screen and (max-width:1279px){
-  #main{}
-}
-/* finish #main - media query */
 
 
 /* footer */
@@ -232,15 +182,57 @@ select{
   -moz-appearance: none; 
   appearance: none;
 }
+/* finish footer */
 
-/* footer - media query */
+
+
+/* media query */
 @media screen and (max-width:1279px){
+  /* 공통 */
+  .container{
+    width: 95%;
+    margin-left: 2.5%;
+  }
   
-}
+  /* #menu */
+  #menu{
+    position: relative;
+    left: inherit; top: 48px; 
+    width: 1030px; height: 24px;
+    margin: 0 auto;
+    background: none;
+  }
+  #menu.show-gnb{
+    position: fixed; right: 0; top: 0; 
+    height: 100%;
+  }
+  .ham_menu{
+    position: absolute; right: 20px; top: 0;
+    margin: 0;
+  }
+  .ham_menu span{
+    left: inherit; right: 0;
+    background-color: #6F6F6F;
+  }
+  #n_icon{display: none;}
+  
+  /* header */
+  header h1{margin-top: 10px;}
+} /* finish max-width:1279px */
+
+
+@media screen and (max-width:1039px){
+  /* #menu */
+  #menu{width: 100%;}
+} /* finish max-width:1039px */
+
 
 @media screen and (max-width:768px){
-  .f_left address{margin-top: 15px;}
+  /* #menu */
+  #menu.show-gnb{width: 65%;}
   
+  /* footer */
+  .f_left address{margin-top: 15px;}
   .f_right{
     position: static;
     margin-bottom: 15px;
@@ -250,4 +242,4 @@ select{
     margin-right: 15px;
   }
   select{display: none;}
-} /* finish footer - media query */
+} /* finish max-width:768px */
