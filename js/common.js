@@ -42,7 +42,7 @@ $(function(){
     $('#notice tbody').stop().animate({top:-50},function(){
       $('#notice tbody tr:first').appendTo('#notice tbody');
     },100);
-    $('#notice tbody').animate({top:0});
+    $('#notice tbody').stop().animate({top:0});
   }
   setInterval(notice,3000);
 });
