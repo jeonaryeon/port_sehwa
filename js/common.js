@@ -41,8 +41,8 @@ $(function(){
   function notice(){
     $('#notice tbody').stop().animate({top:-50},function(){
       $('#notice tbody tr:first').appendTo('#notice tbody');
-    },100);
-    $('#notice tbody').css({top:0});
+    },50);
+    $('#notice tbody').stop().animate({top:0});
   }
   setInterval(notice,3000);
 });
