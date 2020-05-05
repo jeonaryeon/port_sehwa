@@ -169,10 +169,10 @@ header h1 a{
 }
 #notice tbody tr{
   display: none;
-  position: absolute; right: 0; top: 0;
+  position: absolute; right: 0; top: 30px;
   width: 100%;
 }
-#notice tbody tr:nth-of-type(1){display: block;}
+#notice tbody tr:nth-of-type(1){display: block; top: 0;}
 #notice tbody .notify{}
 #notice tbody .date{position: absolute; right: 0; top: 0;}
 
@@ -320,6 +320,10 @@ select{
   #menu{width: 100%;}
   
   /* #main */
+  #notice{height: 70px;}
+  #notice table{height: 25px; margin-top: 24px;}
+  #notice thead{width: 13%;}
+  #notice tbody{width: 87%;}
   #content .program section{
     width: 47.5%; height: 310px;
     margin-right: 5%;
@@ -336,6 +340,11 @@ select{
   #menu.show-gnb{width: 65%;}
   
   /* #main */
+  #notice{height: 60px;}
+  #notice table{height: 20px; margin-top: 21px;}
+  #notice thead{width: 25%;}
+  #notice tbody{width: 75%;}
+  #notice tbody .date{display: none;}
   #content .program section{height: 290px;}
   
   /* footer */
