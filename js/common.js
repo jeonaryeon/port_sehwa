@@ -1,9 +1,6 @@
-$(function(){
-  $(function(){ includeLayout(); }); 
+$(function(){ includeLayout(); }); 
 
-    function includeLayout(){ var includeArea = $('[data-include]'); var self, url; $.each(includeArea, function() { self = $(this); url = self.data("include"); self.load(url, function() { self.removeAttr("data-include"); }); }); }
-});
-
+  function includeLayout(){ var includeArea = $('[data-include]'); var self, url; $.each(includeArea, function() { self = $(this); url = self.data("include"); self.load(url, function() { self.removeAttr("data-include"); }); }); }
 
 $(function(){
   /* nav */
@@ -42,7 +39,7 @@ $(function(){
   
   /* #notice */
   function notice(){
-    $('#notice tbody').animate({top:-30},function(){
+    $('#notice tbody').stop().animate({top:-30},function(){
       $('#notice tbody tr:first').appendTo('#notice tbody');
       $('#notice tbody').css({top:0});
     });
