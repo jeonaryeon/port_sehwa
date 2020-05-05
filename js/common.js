@@ -39,7 +39,7 @@ $(function(){
   
   /* #notice */
   function notice(){
-    $('#notice tbody').stop().animate({top:-50},function(){
+    $('#notice tbody').stop().animate({top:-30},function(){
       $('#notice tbody tr:first').appendTo('#notice tbody');
       $('#notice tbody').css({top:0});
     });
