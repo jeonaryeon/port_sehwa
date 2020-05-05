@@ -156,12 +156,11 @@ header h1 a{
   display: block; 
   overflow: hidden;
   width: 100%; height: 30px; 
-  margin-top: 25px;
+  margin-top: 27px;
 }
 #notice thead{
   float: left;
   width: 10%;
-  line-height: 30px;
 }
 #notice tbody{
   float: left;

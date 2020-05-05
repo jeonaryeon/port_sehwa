@@ -39,9 +39,9 @@ $(function(){
   
   /* #notice */
   function notice(){
-    $('#notice tbody').animate({top:30},function(){
+    $('#notice tbody').animate({top:-30},function(){
       $('#notice tbody tr:first').appendTo('#notice tbody');
-      $('#notice tbody').animate({top:0});
+      $('#notice tbody').css({top:0});
     });
   }
   setInterval(notice,3000);
