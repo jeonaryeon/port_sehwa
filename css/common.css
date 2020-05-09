@@ -143,8 +143,8 @@ header h1 a{
 #main{}
 #main article{margin-bottom: 50px;}
 
-#banner{overflow: hidden;}
-/* #banner .banner{
+/* #banner{overflow: hidden;}
+#banner .banner{
   position: relative;
   width: 200%;
 }
