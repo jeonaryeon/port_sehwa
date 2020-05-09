@@ -40,7 +40,7 @@ $(function(){
   
   /* #banner */
   function slides(){
-    $('#banner .banner').stop().animate({left:'-50%'},function(){
+    $('#banner .banner').stop().animate({left:'-50%'},500,function(){
       $('#banner .banner a:first').appendTo('#banner .banner');
       $('#banner .banner').css({left:0});
     });
