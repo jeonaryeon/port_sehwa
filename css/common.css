@@ -144,7 +144,7 @@ header h1 a{
 #main article{margin-bottom: 50px;}
 
 #banner{overflow: hidden;}
-#banner .banner{
+/* #banner .banner{
   position: relative;
   width: 200%;
 }
@@ -157,7 +157,7 @@ header h1 a{
 }
 #banner .banner a img{
   
-}
+} */
 
 #notice{
   overflow: hidden;
