@@ -40,7 +40,7 @@ $(function(){
   
   /* #banner */
   function slides(){
-    $('#banner .banner').stop().animate({left:'-50%'},500,function(){
+    $('#banner .banner').stop().animate({left:'-50%'},function(){
       $('#banner .banner a:first').appendTo('#banner .banner');
       $('#banner .banner').css({left:0});
     });
@@ -49,11 +49,11 @@ $(function(){
                                         
   /* #notice */
   function notice(){
-    $('#notice tbody').stop().animate({top:-30},function(){
+    $('#notice tbody').stop().animate({top:'-100%'},function(){
       $('#notice tbody tr:first').appendTo('#notce tbody');
       $('#notice tbody').css({top:0});
     });
   }
   setInterval(notice,3000);
 });
- 
+

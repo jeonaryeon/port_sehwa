@@ -126,12 +126,12 @@ footer small{color: #fff;}
 /* header */
 header{}
 header h1{
-  width: 240px; 
+  width: 280px; 
   margin: 35px auto 50px;
 }
 header h1 a{
   display: block; 
-  height: 46px;
+  height: 54px;
   text-indent: -9999px;
   background-image: url(../images/logo.png); background-repeat: no-repeat;
 }
@@ -318,7 +318,8 @@ select{
   #n_icon{display: none;}
   
   /* header */
-  header h1{margin-top: 10px;}
+  header h1{width: 240px; margin-top: 10px;}
+  header h1 a{height: 46px;}
   
   /* #main */
   #content .program section{height: 335px;}
