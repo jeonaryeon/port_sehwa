@@ -35,12 +35,10 @@ $(function(){
   $('.gnb p').on('click',function(){
     $(this).parent().siblings().find('.sub').hide();
     $(this).siblings('.sub').toggle();
-  });  
-}); // nav
-
-
-/* #banner */
-$(function(){
+  });
+  
+  
+  /* #banner */
   function slides(){
     $('#banner .banner').stop().animate({left:'-50%'},function(){
       $('#banner .banner a:first').appendTo('#banner .banner');
@@ -48,11 +46,8 @@ $(function(){
     });
   }
   setInterval(slides,5000);
-}); // #banner
-
-
-/* #notice */
-$(function(){
+                                        
+  /* #notice */
   function notice(){
     $('#notice tbody').stop().animate({top:-40},300,function(){
       $('#notice tbody tr:first').appendTo('#notce tbody');
@@ -60,4 +55,5 @@ $(function(){
     });
   }
   setInterval(notice,3000);
-}); // #notice
+});
+ 
