@@ -124,7 +124,7 @@ footer small{color: #fff;}
 
 
 /* header */
-header{z-index: 1000;}
+header{}
 header h1{
   width: 280px; 
   margin: 35px auto 50px;
