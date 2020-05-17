@@ -2,7 +2,7 @@
 
 /* 공통 */
 .container{
-  position: relative;
+  position: relative; z-index: 100;
   width: 1280px;
   margin-left: calc((100% - 1280px)/2 + 40px);
 }
@@ -356,7 +356,7 @@ select{
   /* header */
   header h1{
     width: 160px;
-    margin: 25px auto 30px;
+    margin: 20px auto 30px;
   }
   header h1 a{
     height: 31px;
