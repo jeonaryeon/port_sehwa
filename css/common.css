@@ -2,7 +2,7 @@
 
 /* 공통 */
 .container{
-  position: relative; z-index: 100;
+  position: relative;
   width: 1280px;
   margin-left: calc((100% - 1280px)/2 + 40px);
 }
@@ -42,14 +42,14 @@ footer small{color: #fff;}
 
 /* #menu */
 #menu{
-  position: fixed; left: 0; top: 0; z-index: 1000;
+  position: fixed; left: 0; top: 0;
   width: 70px; height: 100%;
   padding-left: 10px;
   color: #fff;
   background-color: #AEAFAF;
 }
 #menu.show-gnb{
-  width: 360px;
+  width: 360px; z-index: 1000;
   padding-left: 0;
   background-color: #fff;
 }
