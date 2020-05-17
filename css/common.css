@@ -353,6 +353,10 @@ select{
   /* #menu */
   #menu.show-gnb{width: 65%;}
   
+  /* header */
+  header h1{width: 120px; margin-top: 10px;}
+  header h1 a{height: 23px;}
+  
   /* #main */
   #notice{height: 60px;}
   #notice table{height: 20px; margin-top: 21px;}
