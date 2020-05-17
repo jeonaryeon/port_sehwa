@@ -51,10 +51,5 @@ $(function(){
     });
   }
   setInterval(notice,3000);
-  
-  /* #visit_info */
-//  var visit_infoH1=$('#visit_info .bg').height();
-//  var visit_infoH2=$('#visit_info .cont').height();
-//  $('#visit_info').css({height:visit_infoH1+150});
 });
 
