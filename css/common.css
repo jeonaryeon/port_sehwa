@@ -354,8 +354,14 @@ select{
   #menu.show-gnb{width: 65%;}
   
   /* header */
-  header h1{width: 120px; margin-top: 10px;}
-  header h1 a{height: 23px;}
+  header h1{
+    width: 160px;
+    margin: 25px auto 40px;
+  }
+  header h1 a{
+    height: 31px;
+    background-image: url(../images/m_logo.png);
+  }
   
   /* #main */
   #notice{height: 60px;}
