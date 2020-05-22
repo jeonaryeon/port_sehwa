@@ -18,11 +18,11 @@ $(function(){
     $('.close, .gnb, .menu_bg').hide();
     $('.ham_menu').show();
     
-    if($(window).width()<=1279){
+    if($(window).width()<=1379){
       $('#n_icon').css({display:'none'});
     }
     $(window).resize(function(){
-      if($(window).width()<=1279){
+      if($(window).width()<=1379){
         $('#n_icon').css({display:'none'});
       }
     });
