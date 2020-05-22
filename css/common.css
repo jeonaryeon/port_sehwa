@@ -40,6 +40,22 @@ footer small{color: #fff;}
 
 
 
+/* header */
+header{}
+header h1{
+  width: 280px; 
+  margin: 35px auto 50px;
+}
+header h1 a{
+  display: block; 
+  height: 54px;
+  text-indent: -9999px;
+  background-image: url(../images/logo.png); background-repeat: no-repeat;
+}
+/* finish header */
+
+
+
 /* #menu */
 #menu{
   position: fixed; left: 0; top: 0;
@@ -120,22 +136,6 @@ footer small{color: #fff;}
   background-color: rgba(0,0,0,0.7);
 }
 /* finish #menu */
-
-
-
-/* header */
-header{}
-header h1{
-  width: 280px; 
-  margin: 35px auto 50px;
-}
-header h1 a{
-  display: block; 
-  height: 54px;
-  text-indent: -9999px;
-  background-image: url(../images/logo.png); background-repeat: no-repeat;
-}
-/* finish header */
 
 
 
@@ -295,9 +295,9 @@ select{
   
   /* #menu */
   #menu{
-    position: relative;
+    position: absolute;
     left: inherit; top: 48px; 
-    width: 1030px; height: 24px;
+    width: 30px; height: 24px;
     margin: 0 auto;
     background: none;
   }
