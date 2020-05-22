@@ -153,7 +153,6 @@ header h1 a{
   display: block;
   float: left;
   width: 50%;
-  margin-bottom: 50px;
   outline: 1px solid #eee;
 }
 #banner .banner a img{}
