@@ -282,6 +282,7 @@ select{
   -moz-appearance: none; 
   appearance: none;
 }
+select option{color: #707070;}
 /* finish footer */
 
 
@@ -361,6 +362,7 @@ select{
   #menu{top: 8px;}
   #menu.show-gnb{width: 65%;}
   .ham_menu{width: 24px; height: 20px;}
+  .close{margin-bottom: 50px;}
   .gnb p{
     height: 42px; 
     line-height: 42px;
