@@ -327,9 +327,6 @@ select{
 @media screen and (max-width:1039px){
   body{font-size: 12px;}
   
-  /* #menu */
-  #menu{width: 100%;}
-  
   /* #main */
   #notice{height: 70px;}
   #notice table{height: 25px; margin-top: 24px;}
