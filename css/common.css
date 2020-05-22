@@ -301,7 +301,7 @@ select{
   /* #menu */
   #menu{
     position: absolute;
-    left: inherit; right: 0; top: 30px; 
+    left: inherit; right: 0; top: 15px; 
     width: 30px; height: 24px;
     background: none;
   }
