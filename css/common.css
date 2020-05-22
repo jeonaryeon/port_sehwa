@@ -28,7 +28,7 @@
 
 /* 공통 - font */
 body{color: #707070; font-family: 'Noto Sans KR', sans-serif;}
-p,.sub_m ul li a,article ol li{font-size: 1.25em;}
+p,.sub_m ul li a,.visit ol li,.visit th,.visit td{font-size: 1.25em;}
 h2{font-size: 1.6em;}
 h3, nav p{font-size: 1.4em;}
 .sub li a{font-size: 1.1em; line-height: 1.8;}

@@ -32,13 +32,7 @@
 .visit_common h3{margin-bottom: 30px;}
 .visit_common h3:nth-of-type(2){margin-top: 50px;}
 .visit_common p,.visit_common ol li{line-height: 2;}
-.visit_common p span{position: absolute; right: 0; top: 0;}
-.visit_common small{
-  display: block; 
-  width: 277px; 
-  margin: 10px auto 0; 
-  text-align: left;
-}
+
 
 /* #visit_info */
 #visit_info{}
@@ -55,6 +49,14 @@
   margin: 0 auto;
   text-align: left;
 }
+#visit_info .visit_common p span{position: absolute; right: 0; top: 0;}
+#visit_info .visit_common small{
+  display: block; 
+  width: 277px; 
+  margin: 10px auto 0; 
+  text-align: left;
+}
+
 
 /* #visit_member */
 #visit_member{}
@@ -66,6 +68,62 @@
 }
 
 
+/* #visit_seminar */
+#visit_seminar{}
+#visit_seminar .bg{}
+#visit_seminar .visit_common{
+  left: 50%; top: 45%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+}
+#visit_seminar .visit_common table{margin: 0 auto;}
+#visit_seminar .visit_common th,
+#visit_seminar .visit_common td{
+  padding: 15px; 
+  border: 1px solid #707070;
+}
+#visit_seminar .visit_common th:first-child,
+#visit_seminar .visit_common td:first-child{border-left: 0;}
+#visit_seminar .visit_common th:last-child,
+#visit_seminar .visit_common td:last-child{border-right: 0;}
+
+
+/* #visit_enjoy */
+#visit_enjoy{margin-bottom: 50px;}
+#visit_enjoy article{}
+#visit_enjoy article p{width: 47.5%;}
+#visit_enjoy article p:first-of-type{position: absolute; right: 0; top: 0;}
+#visit_enjoy article p:not(:first-of-type){
+  float: left;
+  margin-top: 50px;
+}
+#visit_enjoy article p:last-of-type{margin-left: 5%;}
+
+
+/* #visit_map */
+#visit_map{margin-bottom: 50px;}
+#visit_map .visit_common{position: inherit;}
+#visit_map .visit_common div{float: left;}
+#visit_map .visit_common div:first-child{width: 30%;}
+#visit_map .visit_common div:last-child{width: 70%;}
+#visit_map .visit_common div p{}
+#visit_map .visit_common div p:not(:last-child){margin-bottom: 40px;}
+#visit_map .visit_common div p strong{
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+#visit_map .visit_common div p:last-child{font-weight: 300;}
+#visit_map .visit_common div p span{
+  margin-right: 10px; 
+  font-weight: 400;
+}
+#visit_map .sehwa_map{border: 1px solid #e1e1e1; box-sizing: border-box;}
+#visit_map .sehwa_map iframe{width: 100%; height: 660px;}
+
+
+
 /* media query */
 @media screen and (max-width:1379px){
   /* 공통 .visit */
@@ -75,6 +133,14 @@
   .visit_common{padding: 35px 45px;}
   .visit_common h3{margin-bottom: 25px;}
   .visit_common h3:nth-of-type(2){margin-top: 45px;}
+  
+  /* #visit_map */
+  #visit_map .visit_common div{float: none;}
+  #visit_map .visit_common div:first-child{width: 100%;}
+  #visit_map .visit_common div:last-child{
+    width: 100%;
+    margin-top: 50px;
+  }
 } /* finish max-width:1379px */
 
 
@@ -86,10 +152,10 @@
   .visit_common{padding: 30px 40px;}
   .visit_common h3{margin-bottom: 20px;}
   .visit_common h3:nth-of-type(2){margin-top: 40px;}
-  .visit_common small{width: 244px;}
   
   /* #visit_info */
   #visit_info .visit_common p:not(:last-child){width: 244px;}
+  #visit_info .visit_common small{width: 244px;}
   
   /* #visit_member */
   #visit_member .visit_common{
@@ -98,6 +164,9 @@
     width: 80%;
     text-align: center;
   }
+  
+  /* #visit_map */
+  #visit_map .sehwa_map iframe{height: 450px;}
 } /* finish max-width:1039px */
 
 
@@ -109,8 +178,26 @@
   .visit_common{padding: 20px 30px;}
   .visit_common h3{margin-bottom: 15px;}
   .visit_common h3:nth-of-type(2){margin-top: 30px;}
-  .visit_common small{width: 227px;}
   
   /* #visit_info */
   #visit_info .visit_common p:not(:last-child){width: 227px;}
+  #visit_info .visit_common small{width: 227px;}
+  
+  /* #visit_seminar */
+  #visit_seminar .visit_common th,
+  #visit_seminar .visit_common td{
+    padding: 10px 5px;
+    border-width: 0.5px;
+  }
+  
+  /* #visit_enjoy */
+  #visit_enjoy article p{width: 100%;}
+  #visit_enjoy article p:first-of-type{position: inherit; width: 80%;}
+  #visit_enjoy article p:not(:first-of-type){float: none;}
+  #visit_enjoy article p:last-of-type{margin-left: 0;}
+  
+  /* #visit_map */
+  #visit_map .visit_common div p:not(:last-child){margin-bottom: 30px;}
+  #visit_map .visit_common div p strong{margin-bottom: 10px;}
+  #visit_map .sehwa_map iframe{height: 350px;}
 } /* finish max-width:768px */
