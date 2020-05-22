@@ -81,7 +81,7 @@ header h1 a{
   transition:all 0.4s;
 }
 .ham_menu .ham1{top: 0; width: 100%;}
-.ham_menu .ham2{top: 12px; width: 75%;}
+.ham_menu .ham2{top: 45%; width: 75%;}
 .ham_menu .ham3{bottom: 0; width: 50%;}
 .ham_menu:hover .ham2,
 .ham_menu:hover .ham3{width: 100%;}
@@ -293,12 +293,15 @@ select{
     margin-left: 2.5%;
   }
   
+  /* header */
+  header h1{width: 240px; margin-top: 20px;}
+  header h1 a{height: 46px;}
+  
   /* #menu */
   #menu{
     position: absolute;
-    left: inherit; right: 0; top: 48px; 
+    left: inherit; right: 0; top: 20px; 
     width: 30px; height: 24px;
-/*    margin: 0 auto;*/
     background: none;
   }
   #menu.show-gnb{
@@ -314,10 +317,6 @@ select{
     background-color: #6F6F6F;
   }
   #n_icon{display: none;}
-  
-  /* header */
-  header h1{width: 240px; margin-top: 10px;}
-  header h1 a{height: 46px;}
   
   /* #main */
   #content .program section{height: 335px;}
@@ -350,9 +349,6 @@ select{
 @media screen and (max-width:768px){
   body{font-size: 11px;}
   
-  /* #menu */
-  #menu.show-gnb{width: 65%;}
-  
   /* header */
   header h1{
     width: 160px;
@@ -362,6 +358,11 @@ select{
     height: 31px;
     background-image: url(../images/m_logo.png);
   }
+  
+  /* #menu */
+  #menu{top: 0;}
+  #menu.show-gnb{width: 65%;}
+  .ham_menu{width: 24px; height: 20px;}
   
   /* #main */
   #notice{height: 60px;}
