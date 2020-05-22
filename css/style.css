@@ -90,6 +90,14 @@
   
   /* #visit_info */
   #visit_info .visit_common p:not(:last-child){width: 244px;}
+  
+  /* #visit_member */
+  #visit_member .visit_common{
+    left: 50%; top: 45%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+  }
 } /* finish max-width:1039px */
 
 
@@ -105,12 +113,4 @@
   
   /* #visit_info */
   #visit_info .visit_common p:not(:last-child){width: 227px;}
-  
-  /* #visit_member */
-  #visit_member .visit_common{
-    left: 50%; top: 45%;
-    transform: translateX(-50%);
-    width: 80%;
-    text-align: center;
-  }
 } /* finish max-width:768px */
