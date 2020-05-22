@@ -7,7 +7,7 @@ $(function(){
     $('#n_icon').css({display:'block'});
     
     $(window).resize(function(){
-      if($(window).width()>=1279){
+      if($(window).width()>=1379){
         $('#n_icon').css({display:'block'});
       }
     });
