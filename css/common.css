@@ -361,7 +361,7 @@ select{
   }
   
   /* #menu */
-  #menu{top: 25px;}
+  #menu{top: 8px;}
   #menu.show-gnb{width: 65%;}
   .ham_menu{width: 24px; height: 20px;}
   
