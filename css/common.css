@@ -296,9 +296,9 @@ select{
   /* #menu */
   #menu{
     position: absolute;
-    left: inherit; top: 48px; 
+    left: inherit; right: 0; top: 48px; 
     width: 30px; height: 24px;
-    margin: 0 auto;
+/*    margin: 0 auto;*/
     background: none;
   }
   #menu.show-gnb{
