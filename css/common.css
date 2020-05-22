@@ -361,6 +361,11 @@ select{
   #menu{top: 8px;}
   #menu.show-gnb{width: 65%;}
   .ham_menu{width: 24px; height: 20px;}
+  .gnb p{
+    height: 42px; 
+    line-height: 42px;
+  }
+  .sub{margin: 15px 0;}
   
   /* #main */
   #notice{height: 60px;}
