@@ -78,6 +78,7 @@ header h1 a{
   position: absolute; left: 0;
   height: 2px;
   background-color: #fff;
+  border-radius: 1px;
   transition:all 0.4s;
 }
 .ham_menu .ham1{top: 0; width: 100%;}
@@ -286,7 +287,7 @@ select{
 
 
 /* media query */
-@media screen and (max-width:1279px){
+@media screen and (max-width:1379px){
   /* 공통 */
   .container{
     width: 95%;
@@ -300,7 +301,7 @@ select{
   /* #menu */
   #menu{
     position: absolute;
-    left: inherit; right: 0; top: 20px; 
+    left: inherit; right: 0; top: 30px; 
     width: 30px; height: 24px;
     background: none;
   }
@@ -360,7 +361,7 @@ select{
   }
   
   /* #menu */
-  #menu{top: 0;}
+  #menu{top: 25px;}
   #menu.show-gnb{width: 65%;}
   .ham_menu{width: 24px; height: 20px;}
   
