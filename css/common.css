@@ -28,13 +28,13 @@
 
 /* 공통 - font */
 body{color: #707070; font-family: 'Noto Sans KR', sans-serif;}
-p,.sub_m ul li a,.visit ol li,.visit th,.visit td{font-size: 1.25em;}
-h2{font-size: 1.6em;}
-h3, nav p{font-size: 1.4em;}
-.sub li a{font-size: 1.1em; line-height: 1.8;}
+p,.sub_m ul li a,.visit ol li,.visit th,.visit td{font-size: 1.25rem;}
+h2{font-size: 1.6rem;}
+h3, nav p{font-size: 1.4rem;}
+.sub li a{font-size: 1.1rem; line-height: 1.8;}
 footer p,address,footer a,select{
   color: #fff;
-  font-size: 1em; line-height: 1.9;
+  font-size: 1rem; line-height: 1.9;
 }
 footer small{color: #fff;}
 
