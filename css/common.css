@@ -28,9 +28,11 @@
 
 /* 공통 - font */
 body{color: #707070; font-family: 'Noto Sans KR', sans-serif;}
-p,.sub_m ul li a,.visit ol li,.visit th,.visit td{font-size: 1.25em;}
-h2{font-size: 1.6em;}
+h2,.museum .tit{font-size: 1.6em;}
+.museum .tit .red{font-size: 1.5em;}
 h3, nav p{font-size: 1.4em;}
+p,.sub_m ul li a,.visit ol li,.visit th,.visit td{font-size: 1.25em;}
+.found_tab{font-size: 1.15em;}
 .sub li a{font-size: 1.1em; line-height: 1.8;}
 footer p,address,footer a,select{
   color: #fff;
@@ -281,6 +283,7 @@ select{
   -moz-appearance: none; 
   appearance: none;
 }
+select::-ms-expand{display: none;}
 select option{color: #707070;}
 /* finish footer */
 
