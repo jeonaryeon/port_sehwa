@@ -7,18 +7,18 @@
   display: flex;
   justify-content: space-between;
 }
-.sub_m ul li{}
-.sub_m ul li a{
+.sub_m a{
   color: #707070;
   font-weight: 500;
 }
-.sub_m ul li a:hover{color: #333;}
+.sub_m a:hover{color: #333;}
 
-.yellow{color: #F3BA51;}
-.red{color: #DA3732;}
-.blue{color: #67C1EA;}
-.dark-red{color: #440C0A;}
-.gray{color: #A7A9AC;}
+.sub_m .yellow{color: #F3BA51;}
+.sub_m .red,
+.tit .red{color: #DA3732;}
+.sub_m .blue{color: #67C1EA;}
+.sub_m .dark-red{color: #440C0A;}
+.sub_m .gray{color: #A7A9AC;}
 
 /* 공통 .visit */
 .visit{margin-bottom: 100px;}
@@ -124,7 +124,7 @@
 
 
 /* 공통 .museum */
-.museum{}
+.museum{margin-bottom: 50px;}
 .museum p{
   line-height: 1.8;
   text-align: justify;
@@ -214,14 +214,13 @@
 #museum_found .found_tabbox .found_guide figure figcaption{line-height: 2;}
 
 #museum_found .founder{}
-#museum_found .founder ol{}
-#museum_found .founder ol li{}
-#museum_found .founder ol li strong{
+#museum_found .founder table{width: 100%;}
+#museum_found .founder th{
   display: inline-block;
-  width: 15%;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 500; text-align: left;
 }
+
 
 
 /* media query */
@@ -320,7 +319,6 @@
   #museum_greetings article p.tit .r_quotes{bottom: -95px;}
   
   /* #museum_found */
-  #museum_found .founder ol li strong{width: 25%;}
   #museum_found .found_tabbox .found_guide{margin-top: 40px;}
   #museum_found .found_tabbox .found_guide figure img{margin: 25px 0 15px;}
 } /* finish max-width:768px */
