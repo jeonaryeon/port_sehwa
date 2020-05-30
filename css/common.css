@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /* 공통 */
+.hidden{opacity: 0;}
 .container{
   position: relative;
   width: 1280px;
@@ -28,11 +29,12 @@
 
 /* 공통 - font */
 body{color: #707070; font-family: 'Noto Sans KR', sans-serif;}
+.found_history th,.found_report thead{font-size: 1.8em;}
 h2,.museum .tit{font-size: 1.6em;}
 .museum .tit .red{font-size: 1.5em;}
 h3, nav p{font-size: 1.4em;}
-p,.sub_m ul li a,.visit ol li,.visit th,.visit td{font-size: 1.25em;}
-.found_tab{font-size: 1.15em;}
+p,.sub_m ul li a,.visit ol li,.visit th,.visit td,.found_history td strong{font-size: 1.25em;}
+.found_tab,.found_report tfoot{font-size: 1.15em;}
 .sub li a{font-size: 1.1em; line-height: 1.8;}
 footer p,address,footer a,select{
   color: #fff;
@@ -43,7 +45,6 @@ footer small{color: #fff;}
 
 
 /* header */
-header{}
 header h1{
   width: 280px; 
   margin: 35px auto 50px;
@@ -109,8 +110,6 @@ header h1 a{
 .gnb .gray{background-color: #A7A9AC;}
 
 .sub{display: none; margin: 20px 0;}
-.sub li{}
-.sub li a{}
 
 .yellow+.sub li a:hover,
 .yellow+.sub li a.on{color: #F3BA51;}
@@ -127,7 +126,6 @@ header h1 a{
   position: absolute; right: 28px; bottom: 30px;
   width: 24px;
 }
-#n_icon a{}
 #n_icon a:nth-child(1){background-position: -24px 0;}
 #n_icon a:nth-child(2){margin: 20px 0; background-position: -48px 0;}
 #n_icon a:nth-child(3){background-position: -72px 0;}
@@ -143,7 +141,6 @@ header h1 a{
 
 
 /* #main */
-#main{}
 #main article{margin-bottom: 50px;}
 
 #banner{overflow: hidden;}
@@ -157,7 +154,6 @@ header h1 a{
   width: 50%;
   outline: 1px solid #eee;
 }
-#banner .banner a img{}
 
 #notice{
   overflow: hidden;
@@ -185,11 +181,7 @@ header h1 a{
   width: 100%;
 }
 #notice tbody tr:first-child{display: block;}
-#notice tbody .notify{}
 #notice tbody .date{position: absolute; right: 0; top: 0;}
-
-#content{}
-#content .cont{}
 
 #content .exhibition{
   position: relative;
@@ -220,7 +212,6 @@ header h1 a{
 }
 #content .exhibition figcaption a span{position: absolute; right: 20px; top: 12px;}
 
-#content .program{}
 #content .program section{
   float: left;
   width: 24%; height: 350px;
@@ -262,7 +253,6 @@ footer{
   background-color: #2E2E2E;
 }
 
-.f_left{}
 .f_left p{
   position: relative;
   width: 227px;

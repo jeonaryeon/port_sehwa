@@ -15,7 +15,10 @@
 
 .sub_m .yellow{color: #F3BA51;}
 .sub_m .red,
-.tit .red{color: #DA3732;}
+.tit .red,
+.found_history th,
+.found_history td strong,
+.shop_tabbox li.on{color: #DA3732;}
 .sub_m .blue{color: #67C1EA;}
 .sub_m .dark-red{color: #440C0A;}
 .sub_m .gray{color: #A7A9AC;}
@@ -35,8 +38,6 @@
 
 
 /* #visit_info */
-#visit_info{}
-#visit_info .bg{}
 #visit_info .visit_common{
   left: 50%; top: 45%;
   transform: translateX(-50%);
@@ -59,9 +60,6 @@
 
 
 /* #visit_member */
-#visit_member{}
-#visit_member .bg{}
-#visit_member .bg img{}
 #visit_member .visit_common{
   right: 0; top: 50%;
   transform: translateY(-50%);
@@ -69,8 +67,6 @@
 
 
 /* #visit_seminar */
-#visit_seminar{}
-#visit_seminar .bg{}
 #visit_seminar .visit_common{
   left: 50%; top: 45%;
   transform: translateX(-50%);
@@ -91,7 +87,6 @@
 
 /* #visit_enjoy */
 #visit_enjoy{margin-bottom: 50px;}
-#visit_enjoy article{}
 #visit_enjoy article p{width: 47.5%;}
 #visit_enjoy article p:first-of-type{position: absolute; right: 0; top: 0;}
 #visit_enjoy article p:not(:first-of-type){
@@ -107,7 +102,6 @@
 #visit_map .visit_common div{float: left;}
 #visit_map .visit_common div:first-child{width: 30%;}
 #visit_map .visit_common div:last-child{width: 70%;}
-#visit_map .visit_common div p{}
 #visit_map .visit_common div p:not(:last-child){margin-bottom: 40px;}
 #visit_map .visit_common div p strong{
   display: block;
@@ -137,8 +131,6 @@
 }
 
 /* #museum_greetings */
-#museum_greetings{}
-#museum_greetings article{}
 #museum_greetings article p:not(.tit){width: 55%;}
 #museum_greetings article p.tit{
   display: inline-block;
@@ -157,8 +149,6 @@
 
 
 /* #museum_intro */
-#museum_intro{}
-#museum_intro article{}
 #museum_intro article figure{
   width: 80%;
   margin: 0 auto;
@@ -172,7 +162,6 @@
 
 
 /* #museum_found */
-#museum_found{}
 #museum_found .found_tab{float: left;}
 #museum_found .found_tab li{
   margin-bottom: 20px;
@@ -199,7 +188,6 @@
 }
 #museum_found .found_tabbox.show{display: block;}
 #museum_found .found_tabbox h3{margin-bottom: 40px;}
-#museum_found .found_tabbox .txt{}
 #museum_found .found_tabbox .txt p{
   width: 66.66%;
   margin-left: 0;
@@ -213,12 +201,88 @@
 #museum_found .found_tabbox .found_guide figure img{margin: 35px 0 25px;}
 #museum_found .found_tabbox .found_guide figure figcaption{line-height: 2;}
 
-#museum_found .founder{}
 #museum_found .founder table{width: 100%;}
 #museum_found .founder th{
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 500; text-align: left;
+}
+
+#museum_found .found_history table{margin-left: 80px;}
+#museum_found .found_history th{
+  position: relative;
+  padding-right: 50px;
+  font-weight: 500; line-height: 5px;
+  vertical-align: top;
+  border-right: 1px solid #DA3732;
+}
+#museum_found .found_history th .dot{
+  display: inline-block;
+  position: absolute; right: -6px; top: 0;
+  width: 10px; height: 10px;
+  background-color: #DA3732;
+  border-radius: 50%;
+}
+#museum_found .found_history td{
+  display: block;
+  margin: 25px 0 0 50px;
+}
+#museum_found .found_history td strong{
+  margin-right: 10px;
+  font-weight: 500;
+}
+#museum_found .found_history td:last-child{margin-bottom: 60px;}
+
+#museum_found .found_report table{
+  width: 100%;
+  margin-bottom: 50px;
+}
+#museum_found .found_report thead th{font-weight: 500; text-align: left;}
+#museum_found .found_report tbody{
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+#museum_found .found_report tbody th{width: 30%;}
+#museum_found .found_report tbody td{
+  width: 100%;
+  padding: 0 10px;
+  line-height: 40px;
+  border: 1px solid #707070; border-right: 0;
+}
+#museum_found .found_report tbody td:last-child{
+  text-align: right;
+  border-left: 0;
+}
+#museum_found .found_report tbody th,
+#museum_found .found_report tbody tr:nth-of-type(2){border-top: 2px solid #707070;}
+#museum_found .found_report tbody tr:nth-of-type(6),
+#museum_found .found_report tbody tr:nth-of-type(7),
+#museum_found .found_report tbody tr:last-child{border-bottom: 2px solid #707070;}
+#museum_found .found_report tfoot th{font-weight: 500; text-align: right;}
+#museum_found .found_report tfoot th a{margin: 0 10px;}
+
+
+/* #museum_shop */
+#museum_shop{}
+#museum_shop .shop_tabbox{}
+#museum_shop .shop_tabbox li{
+  float: left;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#museum_shop .shop{}
+#museum_shop .shop li{
+  overflow: hidden;
+  float: left;
+  width: 30%;
+}
+#museum_shop .shop li:nth-of-type(3n-1){margin: 0 5%;}
+#museum_shop .shop li img{
+  display: block;
+  width: 100%;
+  height: 500px;
 }
 
 
@@ -247,6 +311,9 @@
   
   /* #museum_found */
   #museum_found .found_tabbox .txt p{width: 100%;}
+  #museum_found .found_history table{margin-left: 0;}
+  #museum_found .found_history td{margin: 20px 0 0 50px;}
+  #museum_found .found_history td:last-child{margin-bottom: 50px;}
 } /* finish max-width:1379px */
 
 
@@ -280,6 +347,7 @@
   
   /* #museum_found */
   #museum_found .found_tabbox .found_guide{margin-top: 50px;}
+  #museum_found .found_history td{margin: 15px 0 0 50px;}
 } /* finish max-width:1039px */
 
 
@@ -321,4 +389,6 @@
   /* #museum_found */
   #museum_found .found_tabbox .found_guide{margin-top: 40px;}
   #museum_found .found_tabbox .found_guide figure img{margin: 25px 0 15px;}
+  #museum_found .found_history th{padding-right: 40px;}
+  #museum_found .found_history td{margin: 15px 0 0 40px;}
 } /* finish max-width:768px */
