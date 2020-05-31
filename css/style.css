@@ -264,25 +264,42 @@
 
 
 /* #museum_shop */
-#museum_shop{}
-#museum_shop .shop_tabbox{}
+#museum_shop .shop_tabbox{margin-bottom: 50px;}
 #museum_shop .shop_tabbox li{
   float: left;
   margin-right: 30px;
   cursor: pointer;
 }
 
-#museum_shop .shop{}
 #museum_shop .shop li{
   overflow: hidden;
   float: left;
+  position: relative;
   width: 30%;
+  margin-bottom: 30px;
 }
-#museum_shop .shop li:nth-of-type(3n-1){margin: 0 5%;}
-#museum_shop .shop li img{
+#museum_shop .shop li a{
   display: block;
-  width: 100%;
-  height: 500px;
+  position: absolute; left: 0; top: 0; z-index: 100;
+  width: 100%; height: 100%;
+  text-indent: -9999px;
+}
+#museum_shop .shop li:nth-of-type(3n+2){margin: 0 5% 30px;}
+#museum_shop .shop li span{display: block; overflow: hidden;}
+#museum_shop .shop li span img{
+  height: auto;
+  transition: all 0.4s;
+}
+#museum_shop .shop li:hover span img{transform: scale(1.1);}
+#museum_shop .shop li figcaption p{
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+  text-overflow: ellipsis; white-space: nowrap;
+}
+#museum_shop .shop li figcaption .name strong{
+  margin-right: 10px;
+  font-weight: 500;
 }
 
 

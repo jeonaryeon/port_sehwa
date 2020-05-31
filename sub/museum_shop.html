@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="https://jeonaryeon.github.io/port_sehwa/css/reset.css">
   <link rel="stylesheet" href="https://jeonaryeon.github.io/port_sehwa/css/common.css">
   <link rel="stylesheet" href="https://jeonaryeon.github.io/port_sehwa/css/style.css">
+  <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/style.css">
   
   <!-- js 연결 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="../js/include.js"></script>
   <script src="../js/common.js"></script>
+  <script src="../js/script.js"></script>
 </head>
 <body>
   <header class="container">
@@ -35,20 +37,21 @@
   <section id="museum_shop" class="museum container">
     <h2 class="readonly">뮤지엄 샵</h2>
     <ul class="clearfix shop_tabbox">
-      <li class="on">All</li>
-      <li>SMA Brand</li>
-      <li>OTHER Brand</li>
+      <li class="on all">All</li>
+      <li class="sma">SMA Brand</li>
+      <li class="other">OTHER Brand</li>
     </ul>
+    
     <article class="clearfix shop">
       <h3 class="readonly">뮤지엄 샵</h3>
       <ul class="clearfix">
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA1.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA1.jpg" alt="해머링맨 코스터"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>코스터</p>
+              <p class="cost">1,500원/7,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -56,43 +59,21 @@
         <li class="all other">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/OTHER1.jpg" alt="">
+            <span><img src="../images/museum_shop/OTHER1.jpg" alt="멜팅스튜디오 포스터"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>멜팅스튜디오</strong>포스터</p>
+              <p class="cost">8,900원</p>
             </figcaption>
           </figure>
         </li>
         
-        <li class="all sma">
+        <li class="all sma m">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA2.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA2.jpg" alt="해머링맨 배지"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
-            </figcaption>
-          </figure>
-        </li>
-        
-        <li class="all other">
-          <a href="#">click</a>
-          <figure>
-            <img src="../images/museum_shop/OTHER2.jpg" alt="">
-            <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
-            </figcaption>
-          </figure>
-        </li>
-        
-        <li class="all sma">
-          <a href="#">click</a>
-          <figure>
-            <img src="../images/museum_shop/SMA3.jpg" alt="">
-            <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>배지</p>
+              <p class="cost">8,000원/15,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -100,10 +81,10 @@
         <li class="all other">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/OTHER3.jpg" alt="">
+            <span><img src="../images/museum_shop/OTHER2.jpg" alt="오브드제이 캘리그라피 카드"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>오브드제이</strong>캘리그라피 카드</p>
+              <p class="cost">2,500원</p>
             </figcaption>
           </figure>
         </li>
@@ -111,10 +92,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA4.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA3.jpg" alt="아티스트로 살아가기 최은혜_마스킹 테이프"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>아티스트로 살아가기</strong>최은혜_마스킹 테이프</p>
+              <p class="cost">4,500원</p>
             </figcaption>
           </figure>
         </li>
@@ -122,10 +103,10 @@
         <li class="all other">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/OTHER4.jpg" alt="">
+            <span><img src="../images/museum_shop/OTHER3.jpg" alt="퍼블릭아트샵 Corriedale"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>퍼블릭아트샵</strong>Corriedale</p>
+              <p class="cost">N/A</p>
             </figcaption>
           </figure>
         </li>
@@ -133,10 +114,32 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA5.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA4.jpg" alt="해머링맨 패드백"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>패드백</p>
+              <p class="cost">16,000원</p>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li class="all other">
+          <a href="#">click</a>
+          <figure>
+            <span><img src="../images/museum_shop/OTHER4.jpg" alt="퍼블릭아트샵 Gold bowl set"></span>
+            <figcaption>
+              <p class="name"><strong>퍼블릭아트샵</strong>Gold bowl set</p>
+              <p class="cost">N/A</p>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li class="all sma m">
+          <a href="#">click</a>
+          <figure>
+            <span><img src="../images/museum_shop/SMA5.jpg" alt="해머링맨 에코백_red,yellow"></span>
+            <figcaption>
+              <p class="name"><strong>해머링맨</strong>에코백_red,yellow</p>
+              <p class="cost">20,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -144,10 +147,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA6.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA6.jpg" alt="해머링맨 크로스백"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>크로스백</p>
+              <p class="cost">15,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -155,10 +158,21 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA7.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA7.jpg" alt="진주귀걸이를 한 소녀 패브릭코스터"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>진주귀걸이를 한 소녀</strong>패브릭코스터</p>
+              <p class="cost">5,000원</p>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li class="all sma m">
+          <a href="#">click</a>
+          <figure>
+            <span><img src="../images/museum_shop/SMA8.jpg" alt="진주귀걸이를 한 소녀 배지,스티커"></span>
+            <figcaption>
+              <p class="name"><strong>진주귀걸이를 한 소녀</strong>배지,스티커</p>
+              <p class="cost">7,000원/1,500원</p>
             </figcaption>
           </figure>
         </li>
@@ -166,10 +180,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA8.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA9.jpg" alt="해머링맨 키링"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>키링</p>
+              <p class="cost">32,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -177,10 +191,21 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA9.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA10.jpg" alt="세화 미디어아트 프로젝트 유비호_필름 포스트 카드"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>세화 미디어아트 프로젝트</strong>유비호_필름 포스트 카드</p>
+              <p class="cost hidden">N/A</p>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li class="all sma m">
+          <a href="#">click</a>
+          <figure>
+            <span><img src="../images/museum_shop/SMA11.jpg" alt="세화 미디어아트 프로젝트 박화영_비너스 밴딧 반별 뱃지"></span>
+            <figcaption>
+              <p class="name"><strong>세화 미디어아트 프로젝트</strong>박화영_비너스 밴딧 반별 뱃지</p>
+              <p class="cost hidden">N/A</p>
             </figcaption>
           </figure>
         </li>
@@ -188,10 +213,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA10.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA12.jpg" alt="팬텀시티 이희준_노트"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>팬텀시티</strong>이희준_노트</p>
+              <p class="cost hidden">N/A</p>
             </figcaption>
           </figure>
         </li>
@@ -199,10 +224,21 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA11.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA13.jpg" alt="팬텀시티 혜자_뱃지,손거울"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>팬텀시티</strong>혜자_뱃지,손거울</p>
+              <p class="cost hidden">N/A</p>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li class="all sma m">
+          <a href="#">click</a>
+          <figure>
+            <span><img src="../images/museum_shop/SMA14.jpg" alt="팬텀시티 최은정_뱃지 손거울"></span>
+            <figcaption>
+              <p class="name"><strong>팬텀시티</strong>최은정_뱃지 손거울</p>
+              <p class="cost hidden">N/A</p>
             </figcaption>
           </figure>
         </li>
@@ -210,10 +246,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA12.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA15.jpg" alt="팬텀시티 홍성우_천포스터"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>팬텀시티</strong>홍성우_천포스터</p>
+              <p class="cost hidden">N/A</p>
             </figcaption>
           </figure>
         </li>
@@ -221,10 +257,21 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA13.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA16.jpg" alt="팬텀시티 유리컵"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>팬텀시티</strong>유리컵</p>
+              <p class="cost hidden">N/A</p>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li class="all sma m">
+          <a href="#">click</a>
+          <figure>
+            <span><img src="../images/museum_shop/SMA17.jpg" alt="해머링맨 향초"></span>
+            <figcaption>
+              <p class="name"><strong>해머링맨</strong>향초</p>
+              <p class="cost">N/A</p>
             </figcaption>
           </figure>
         </li>
@@ -232,10 +279,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA14.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA18.jpg" alt="해머링맨 볼펜"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>볼펜</p>
+              <p class="cost">1,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -243,10 +290,21 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA15.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA19.jpg" alt="해머링맨 메모블럭"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>메모블럭</p>
+              <p class="cost">6,000원</p>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li class="all sma m">
+          <a href="#">click</a>
+          <figure>
+            <span><img src="../images/museum_shop/SMA20.jpg" alt="해머링맨 플립북 스티커메모"></span>
+            <figcaption>
+              <p class="name"><strong>해머링맨</strong>플립북 스티커메모</p>
+              <p class="cost">5,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -254,10 +312,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA16.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA21.jpg" alt="해머링맨 테이블웨어"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>테이블웨어</p>
+              <p class="cost">N/A</p>
             </figcaption>
           </figure>
         </li>
@@ -265,10 +323,21 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA17.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA22.jpg" alt="해머링맨 무지노트"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>무지노트</p>
+              <p class="cost">2,000원</p>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li class="all sma m">
+          <a href="#">click</a>
+          <figure>
+            <span><img src="../images/museum_shop/SMA23.jpg" alt="해머링맨 렌티큘러 엽서"></span>
+            <figcaption>
+              <p class="name"><strong>해머링맨</strong>렌티큘러 엽서</p>
+              <p class="cost">3,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -276,10 +345,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA18.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA24.jpg" alt="해머링맨 북클립 3개입"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>북클립 3개입</p>
+              <p class="cost">4,000원</p>
             </figcaption>
           </figure>
         </li>
@@ -287,76 +356,10 @@
         <li class="all sma">
           <a href="#">click</a>
           <figure>
-            <img src="../images/museum_shop/SMA19.jpg" alt="">
+            <span><img src="../images/museum_shop/SMA25.jpg" alt="해머링맨 북클립 6개입"></span>
             <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
-            </figcaption>
-          </figure>
-        </li>
-        
-        <li class="all sma">
-          <a href="#">click</a>
-          <figure>
-            <img src="../images/museum_shop/SMA20.jpg" alt="">
-            <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
-            </figcaption>
-          </figure>
-        </li>
-        
-        <li class="all sma">
-          <a href="#">click</a>
-          <figure>
-            <img src="../images/museum_shop/SMA21.jpg" alt="">
-            <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
-            </figcaption>
-          </figure>
-        </li>
-        
-        <li class="all sma">
-          <a href="#">click</a>
-          <figure>
-            <img src="../images/museum_shop/SMA22.jpg" alt="">
-            <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
-            </figcaption>
-          </figure>
-        </li>
-        
-        <li class="all sma">
-          <a href="#">click</a>
-          <figure>
-            <img src="../images/museum_shop/SMA23.jpg" alt="">
-            <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
-            </figcaption>
-          </figure>
-        </li>
-        
-        <li class="all sma">
-          <a href="#">click</a>
-          <figure>
-            <img src="../images/museum_shop/SMA24.jpg" alt="">
-            <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
-            </figcaption>
-          </figure>
-        </li>
-        
-        <li class="all sma">
-          <a href="#">click</a>
-          <figure>
-            <img src="../images/museum_shop/SMA25.jpg" alt="">
-            <figcaption>
-              <p class="name"></p>
-              <p class="cost"></p>
+              <p class="name"><strong>해머링맨</strong>북클립 6개입</p>
+              <p class="cost">6,000원</p>
             </figcaption>
           </figure>
         </li>

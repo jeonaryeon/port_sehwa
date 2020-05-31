@@ -34,7 +34,7 @@ h2,.museum .tit{font-size: 1.6em;}
 .museum .tit .red{font-size: 1.5em;}
 h3, nav p{font-size: 1.4em;}
 p,.sub_m ul li a,.visit ol li,.visit th,.visit td,.found_history td strong{font-size: 1.25em;}
-.found_tab,.found_report tfoot{font-size: 1.15em;}
+.found_tab,.found_report tfoot,.shop_tabbox li{font-size: 1.15em;}
 .sub li a{font-size: 1.1em; line-height: 1.8;}
 footer p,address,footer a,select{
   color: #fff;
